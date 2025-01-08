@@ -8,6 +8,11 @@ import viteLogo from '/vite.svg'
 import Chat from "./chat.ts";
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
+  <label class="swap swap-rotate theme-switcher">
+    <input type="checkbox" value="dark" class="theme-switcher__input" />
+    <span class="swap-on theme-switcher__icon icon-[tabler--sun]"></span>
+    <span class="swap-off theme-switcher__icon icon-[tabler--moon]"></span>
+  </label>
   <main class="main">
     <section class="logos-section">
       <a class="logos-wrapper__item logo" href="https://vite.dev" target="_blank">
@@ -18,7 +23,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
         <img src="${typescriptLogo}" class="logo__image" alt="TypeScript logo" />
       </a>
         +
-      <a class="logos-wrapper__item" href="https://flyonui.com/" target="_blank">
+      <a class="logos-wrapper__item logo" href="https://flyonui.com/" target="_blank">
         <img src="${flyonuiLogo}" class="logo__image" alt="FlyonUI logo" />
       </a>
     </section>
