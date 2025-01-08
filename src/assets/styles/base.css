@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply w-screen h-screen min-h-screen flex flex-col justify-center;
+}
+
+.main {
+  @apply p-4 mt-10 container mx-auto flex flex-col gap-10 md:gap-14 lg:gap-16 xl:gap-20;
+}
+
+.logo:hover {
+  @apply opacity-70;
+}
+
+.title {
+  @apply text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold;
+}
+
+.logos-section {
+  @apply flex justify-center items-center gap-4 md:gap-8 lg:gap-10 xl:gap-12 text-3xl md:text-4xl lg:text-5xl xl:text-6xl;
+}
+
+.logo__image {
+  @apply size-16 sm:size-20 md:size-24 lg:size-32;
+}
+
+.chat-section {
+  @apply flex flex-col gap-10;
+}
+
+.chat-section__title {
+  @apply text-center;
+}
+
+.chat-section__body {
+  @apply p-2 card bg-base-200 rounded-box;
+}
+
+.chat-section__users {
+  @apply card-header flex justify-center;
+}
+
+.chat-section__messages {
+  @apply card-body h-full max-h-[300px] overflow-y-auto;
+}
+
+.chat-section__action {
+  @apply p-4 card-actions flex flex-row flex-nowrap;
+}
